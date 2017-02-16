@@ -35,6 +35,7 @@ I used the "OpenShot" video editor to make the final timelapse movie. I also use
 2.  Below the year directory make a directory named "Days". This is where you will place the individual day directories downloaded from the Pi.
 3.  Make another below the year directory named "All_Frames."
 4.  Copy the contents of the "Tools" directory into the year directory.
+5.  Now run the "MakeTimelapse" script. It will run the other scripts.
   * Link_Frames will create hard links in the "All_Frames" directory.
   * timelapse-deflicker.pl will do the deflickering
   * renumberJPG will do the sequential renumbering needed for OpenShot to create the video.
