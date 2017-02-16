@@ -1,0 +1,10 @@
+#!/bin/bash
+
+a=0
+for i in *.jpg; do
+  new=$(printf "%05d.jpg" "$a") #04 pad to length of 4
+  echo "renaming " "$i" " to " "$new"
+mv -- "$i" "$new"
+  let a=a+1
+done
+
