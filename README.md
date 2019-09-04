@@ -20,7 +20,7 @@ The number of frames per day is configurable by editing main.cpp:
 #define SECONDS_PER_DAY		(2.)
 ```
 
-I use Code::Blocks on the Pi as my c++ IDE, but you can work up a makefile if  you want.
+I use Code::Blocks on the Pi as my c++ IDE, but attached is also a Makefile for you to use with `make` and `make clean` commands.
 
 ## Usage
 The normal way to use this is to setup a daily cron job for some very early time in the morning (like 3:00 AM) that calls the "Daylapse" program. Daylapse will wait until sunrise and then start taking photos. The time between photos is calculated based on the number of intended frames per seconds, and the number of seconds per day. After taking all of the photos for a given day the program exits. Cron will restart it the next day.
