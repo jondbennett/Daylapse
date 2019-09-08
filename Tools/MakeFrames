@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd "/home/jon/Documents/TimeLapse/2016"
 ./Link_Frames
 cd "All_Frames"
 ../timelapse-deflicker.pl -w 200 -p 2
